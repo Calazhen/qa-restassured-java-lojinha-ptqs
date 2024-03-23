@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ProdutoDataFactory {
 
-    public static ProdutoPojo criarProdutoComumComOValorIgualA(double valor){
+    public static ProdutoPojo criarProdutoComumComOValorIgualA(double valor) {
         ProdutoPojo produto = new ProdutoPojo();
         produto.setProdutoNome("Playstation 5");
         produto.setProdutoValor(valor);
@@ -34,6 +34,6 @@ public class ProdutoDataFactory {
         componentes.add(segundoComponente);
 
         produto.setComponentes(componentes);
-        return  produto;
+        return produto;
     }
 }
