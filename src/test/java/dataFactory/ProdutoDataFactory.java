@@ -35,5 +35,19 @@ public class ProdutoDataFactory {
 
         produto.setComponentes(componentes);
         return produto;
+    }public static ProdutoPojo criarProdutoComumSemComponentesEValorIgualA(double valor) {
+        ProdutoPojo produto = new ProdutoPojo();
+        produto.setProdutoNome("Playstation 5");
+        produto.setProdutoValor(valor);
+
+        List<String> cores = new ArrayList<>();
+        cores.add("preto");
+        cores.add("branco");
+
+        produto.setProdutoCores(cores);
+        produto.setProdutoUrlMock("");
+
+
+        return produto;
     }
 }
