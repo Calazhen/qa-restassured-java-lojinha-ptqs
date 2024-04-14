@@ -1,4 +1,4 @@
-package pojo;
+package dtos;
 
 import java.util.List;
 

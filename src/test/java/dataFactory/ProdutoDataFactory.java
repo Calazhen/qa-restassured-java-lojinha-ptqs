@@ -1,7 +1,7 @@
 package dataFactory;
 
-import pojo.ComponentePojo;
-import pojo.ProdutoPojo;
+import dtos.ComponentePojo;
+import dtos.ProdutoPojo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,9 @@ public class ProdutoDataFactory {
 
         produto.setComponentes(componentes);
         return produto;
-    }public static ProdutoPojo criarProdutoComumSemComponentesEValorIgualA(double valor) {
+    }
+
+    public static ProdutoPojo criarProdutoComumSemComponentesEValorIgualA(double valor) {
         ProdutoPojo produto = new ProdutoPojo();
         produto.setProdutoNome("Playstation 5");
         produto.setProdutoValor(valor);

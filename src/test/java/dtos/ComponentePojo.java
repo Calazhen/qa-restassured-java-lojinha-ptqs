@@ -1,4 +1,4 @@
-package pojo;
+package dtos;
 
 public class ComponentePojo {
     private String componenteNome;
@@ -8,7 +8,8 @@ public class ComponentePojo {
         this.componenteNome = componenteNome;
         this.componenteQuantidade = componenteQuantidade;
     }
-    public ComponentePojo( ) {
+
+    public ComponentePojo() {
         this.componenteNome = componenteNome;
         this.componenteQuantidade = componenteQuantidade;
     }

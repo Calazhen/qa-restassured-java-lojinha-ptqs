@@ -1,4 +1,4 @@
-package pojo;
+package dtos;
 
 public class UsuarioPojo {
     private String usuarioLogin;

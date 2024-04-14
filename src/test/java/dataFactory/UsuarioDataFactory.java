@@ -1,6 +1,6 @@
 package dataFactory;
 
-import pojo.UsuarioPojo;
+import dtos.UsuarioPojo;
 
 public class UsuarioDataFactory {
 

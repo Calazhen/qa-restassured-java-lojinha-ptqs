@@ -9,8 +9,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.DisplayName;
-import pojo.ComponentePojo;
-import pojo.ProdutoPojo;
+import dtos.ComponentePojo;
+import dtos.ProdutoPojo;
 
 import java.util.ArrayList;
 
@@ -27,7 +27,6 @@ public class AdicaoProdutoSteps {
     String token;
 
 
-
     // Arrange
     @Dado("que tenho um produto com valor válido")
     public void que_tenho_um_produto_com_valor_válido() {
@@ -41,24 +40,23 @@ public class AdicaoProdutoSteps {
     }
 
     // Act
-    @Quando("postar um produto")
-    public void postar_um_produto() {
+    @Quando("{string} um produto")
+    public void post_um_produto(String httpMethod) {
         response = cadastraProduto(produtoParaCadastrar);
     }
 
 
     // Assert
-    @Então("devo ver a mensagem de sucesso")
-    public void devo_ver_a_mensagem_de_sucesso() {
+    @Então("devo ver a {string}")
+    public void devo_ver_a_produto_adicionado_com_sucesso(String mensagemSucesso) {
         response
-                .body("message", equalTo("Produto adicionado com sucesso"))
+                .body("message", equalTo(mensagemSucesso))
                 .statusCode(HttpStatus.SC_CREATED);
     }
 
 
     private ValidatableResponse cadastraProduto(ProdutoPojo produtoParaCadastrar) {
         baseURI = "http://165.227.93.41";
-
         capturarToken();
 
         return given()
