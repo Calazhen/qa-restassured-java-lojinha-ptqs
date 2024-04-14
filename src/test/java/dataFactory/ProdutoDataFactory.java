@@ -49,7 +49,6 @@ public class ProdutoDataFactory {
         produto.setProdutoCores(cores);
         produto.setProdutoUrlMock("");
 
-
         return produto;
     }
 }
