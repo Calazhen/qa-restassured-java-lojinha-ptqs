@@ -47,8 +47,8 @@ public class AdicaoProdutoSteps {
 
 
     // Assert
-    @Então("devo ver a {string}")
-    public void devo_ver_a_produto_adicionado_com_sucesso(String mensagemSucesso) {
+    @Então("devo ver a mensagem {string}")
+    public void devo_ver_a_mensagem_produto_adicionado_com_sucesso(String mensagemSucesso) {
         response
                 .body("message", equalTo(mensagemSucesso))
                 .statusCode(HttpStatus.SC_CREATED);
