@@ -32,7 +32,7 @@ A lojinha API possui uma regra de negócio para cadastro de produto onde o valor
 
 2º Passo - Baixar o Plugin do Intelij “Java e Cucumber”
 
-![Untitled](C:\Users\henri\IdeaProjects\lojinhaAPIAutomacao\src\test\resources\images\plugin.png)
+![Untitled](https://github.com/Calazhen/qa-restassured-java-lojinha-ptqs/blob/lojinha-api-automacao-cucumber/src/test/resources/images/plugin.png)
 
 3º Passo - Criar uma classe Runner na pasta raiz de teste \src\test\java\RunCucumberClass.java
 
@@ -67,11 +67,11 @@ Exemplo:  AdicaoProduto.feature
 
 5º Passo - Troque a pasta “componentes” por “stepdefs” (Step Definition)
 
-![Untitled](C:\Users\henri\IdeaProjects\lojinhaAPIAutomacao\src\test\resources\images\StepDefs.png)
+![Untitled](https://github.com/Calazhen/qa-restassured-java-lojinha-ptqs/blob/lojinha-api-automacao-cucumber/src/test/resources/images/StepDefs.png)
 
 6º Passo - Troque o nome da classe de Teste para “AdicaoProdutoSteps” em \src\test\java\stepdefs\produto\AdicaoProdutoSteps.java
 
-![Untitled](C:\Users\henri\IdeaProjects\lojinhaAPIAutomacao\src\test\resources\images\AdicaoProdutoStepsClasse.png)
+![Untitled](https://github.com/Calazhen/qa-restassured-java-lojinha-ptqs/blob/lojinha-api-automacao-cucumber/src/test/resources/images/AdicaoProdutoStepsClasse.png)
 
 7º Passo - Execute o arquivo .Feature do passo 4, ele irá te dar os métodos equivalentes para implementar os Steps do Cucumber
 
@@ -237,11 +237,11 @@ public class AdicaoProdutoSteps {
 
 11º Passo - Execute com sucesso ✅
 
-![Untitled](C:\Users\henri\IdeaProjects\lojinhaAPIAutomacao\src\test\resources\images\execucaoSucesso.png)
+![Untitled](https://github.com/Calazhen/qa-restassured-java-lojinha-ptqs/blob/lojinha-api-automacao-cucumber/src/test/resources/images/execucaoSucesso.png)
 
 12º Passo - Visualize o relatório gerado em \lojinhaAPIAutomacao\target\cucumber-report.html
 
-![Untitled](C:\Users\henri\IdeaProjects\lojinhaAPIAutomacao\src\test\resources\images\RelatorioCucumber.png)
+![Untitled](https://github.com/Calazhen/qa-restassured-java-lojinha-ptqs/blob/lojinha-api-automacao-cucumber/src/test/resources/images/RelatorioCucumber.png)
 
 
 ## Observação
