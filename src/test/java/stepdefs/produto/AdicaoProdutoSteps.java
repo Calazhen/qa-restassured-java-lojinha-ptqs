@@ -40,8 +40,8 @@ public class AdicaoProdutoSteps {
     }
 
     // Act
-    @Quando("{string} um produto")
-    public void post_um_produto(String httpMethod) {
+    @Quando("o metodo {string} em um produto")
+    public void o_metodo_em_um_produto(String httpMethod) {
         response = cadastraProduto(produtoParaCadastrar);
     }
 
