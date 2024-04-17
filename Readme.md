@@ -243,7 +243,6 @@ public class AdicaoProdutoSteps {
 
 ![Untitled](C:\Users\henri\IdeaProjects\lojinhaAPIAutomacao\src\test\resources\images\RelatorioCucumber.png)
 
-[Relatório](C:\Users\henri\IdeaProjects\lojinhaAPIAutomacao\target\cucumber-report.html)
 
 ## Observação
 
